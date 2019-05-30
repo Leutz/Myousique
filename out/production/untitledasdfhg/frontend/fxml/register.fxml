@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #353755;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.controllers.AuthController">
+   <children>
+      <AnchorPane layoutX="450.0" layoutY="72.0" prefHeight="456.0" prefWidth="388.0" style="-fx-background-color: #e0e4ee; -fx-background-radius: 10; -fx-border-radius: 10;">
+         <children>
+            <Button fx:id="registerButton" defaultButton="true" layoutX="50.0" layoutY="348.0" mnemonicParsing="false" onAction="#clickedRegister" prefHeight="38.0" prefWidth="288.0" text="REGISTER">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button fx:id="goToLoginButton" layoutX="119.0" layoutY="395.0" mnemonicParsing="false" onAction="#goToLogin" prefHeight="30.0" prefWidth="151.0" text="LOGIN" />
+            <Label layoutX="50.0" layoutY="144.0" text="Email" />
+            <Label layoutX="50.0" layoutY="206.0" text="Password" />
+            <PasswordField fx:id="passwordLoginInput" layoutX="50.0" layoutY="223.0" prefHeight="38.0" prefWidth="288.0" promptText="shhhhhh" />
+            <TextField id="emailLoginFielda" fx:id="emailLoginInput" layoutX="50.0" layoutY="161.0" prefHeight="38.0" prefWidth="288.0" promptText="example@email.yom" />
+            <TextField id="emailLoginFielda" fx:id="emailLoginInput1" layoutX="50.0" layoutY="98.0" prefHeight="38.0" prefWidth="135.0" promptText="Jon" />
+            <TextField id="emailLoginFielda" fx:id="emailLoginInput11" layoutX="203.0" layoutY="98.0" prefHeight="38.0" prefWidth="135.0" promptText="Snow" />
+            <Label layoutX="50.0" layoutY="81.0" text="First Name" />
+            <Label layoutX="203.0" layoutY="81.0" text="Last Name" />
+            <Label layoutX="156.0" layoutY="34.0" prefHeight="20.0" prefWidth="77.0" text="REGISTER">
+               <font>
+                  <Font name="Roboto Medium" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="51.0" layoutY="268.0" text="Confirm Password" />
+            <PasswordField fx:id="passwordLoginInput1" layoutX="51.0" layoutY="285.0" prefHeight="38.0" prefWidth="288.0" promptText="shhhhhh again" />
+         </children></AnchorPane>
+      <ImageView fitHeight="289.0" fitWidth="427.0" layoutX="39.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../fun.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
